@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "bkroad-api-executor",
+    "name": "bkroad-api",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "1cedpd3pjd",
+    "module": "api"
+  }
+}

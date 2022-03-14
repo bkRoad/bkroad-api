@@ -1,0 +1,22 @@
+{
+  "name": "bkroad-api",
+  "version": "1.0.0",
+  "description": "Steal book from crying kids",
+  "main": "api.js",
+  "scripts": {
+    "create": "claudia create --region us-east-1 --api-module api",
+    "update": "claudia update --profile claudia",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bkroad",
+  "license": "ISC",
+  "devDependencies": {
+    "claudia": "^5.13.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.971.0",
+    "claudia-api-builder": "^4.1.2",
+    "claudia-bot-builder": "^4.5.0",
+    "uuid": "^8.3.2"
+  }
+}
