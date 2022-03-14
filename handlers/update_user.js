@@ -1,10 +1,10 @@
 const AWS = require('aws-sdk')
 const docClient = new AWS.DynamoDB.DocumentClient()
 
-function updateUser(username, updates) {
+module.exports = (username, updates) => {
 	if(!username || !updates)
 		throw new Error("Update what bruh")
-	return docClient.update({
+	return docClient.put({
         TableName: 'bkroad-users',
         Key: {
             userName: username
@@ -24,5 +24,3 @@ function updateUser(username, updates) {
         throw deleteError
     })
 }
-
-module.exports = updateUser

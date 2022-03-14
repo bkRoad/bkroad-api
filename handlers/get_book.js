@@ -7,8 +7,8 @@ module.exports = (bookNumber) => {
 			TableName: 'bkroad-books'
 		}).promise().then(result => result.Items)
 	return docClient.get({
-	TableName: 'bkroad-books',
-	Key: {
-		bookNumber: bookNumber
+		TableName: 'bkroad-books',
+		Key: {
+			bookNumber: bookNumber
 	}}).promise().then(result => result.Items)
 }
