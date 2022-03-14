@@ -1,0 +1,1 @@
+aws dynamodb create-table --table-name bkroad-users --attribute-definitions AttributeName=userName,AttributeType=S --key-schema AttributeName=userName,KeyType=HASH  --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 --region us-east-1 --query TableDescription.TableArn --output text
